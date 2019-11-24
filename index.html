@@ -1,0 +1,68 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 id="title" class="text-center">Survey Form</h1>
+            <p id="description" class="p-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+                blanditiis!</p>
+        </div>
+
+        <form id="survey-form">
+            <div class="form-content">
+                <label id="name-label">Name</label>
+                <input id="name" type="text" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-content">
+                <label id="email-label">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-content">
+                <label id="number-label">Age</label>
+                <input id="number" type="number" name="age" placeholder="Age" min="15" max="99">
+            </div>
+            <div class="form-content">
+                <label id="options">Lorem ipsum dolor sit amet consectetur adipisicing?</label>
+                <select name="" id="dropdown">
+                    <option disabled selected value>Select option below</option>
+                    <option value="lorem">Lorem</option>
+                    <option value="ipsum">Ipsum</option>
+                    <option value="dolor">Dolor </option>
+                </select>
+            </div>
+            <div class="form-content">
+                <label id="radio-title">Lorem ipsum dolor sit amet consectetur.?</label>
+                <label><input type="radio" name="user-recommend" value="lorem" class="radio-style"> Lorem</label>
+                <label><input type="radio" name="user-recommend" value="ipsum" class="radio-style"> Ipsum</label>
+                <label><input type="radio" name="user-recommend" value="consectetur" class="radio-style">
+                    Consectetur</label>
+            </div>
+            <div class="form-content">
+                <label id="checkbox-title">Lorem ipsum dolor sit amet consectetur.?</label>
+                <label><input type="checkbox" value="lorem" class="radio-style"> Lorem</label>
+                <label><input type="checkbox" value="ipsum" class="radio-style"> Ipsum</label>
+                <label><input type="checkbox" value="consectetur" class="radio-style">
+                    Consectetur</label>
+            </div>
+            <div class="form-content">
+                <label id="textarea-title">Comments or suggestions</label>
+                <textarea name="text" placeholder="enter text here" id="text"></textarea>
+            </div>
+            <div class="form-content">
+                <button id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
